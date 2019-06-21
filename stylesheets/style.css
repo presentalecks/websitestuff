@@ -1,0 +1,274 @@
+/* latin */
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v21/neILzCirqoswsqX9zoKmMw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+/* latin bold */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v13/Qw3FZQNVED7rKGKxtqIqX5Ectllte10h.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+/* latin */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v13/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    display: initial;
+    background-color: #fbeaeb;
+}
+div{
+    width: 500px;
+    height: 350px;
+}
+.one {
+    border: solid 5px black;
+    margin:40px auto;
+    background-color: #2f3c7e;
+    background-image: url("circle.png")
+}
+.one p {
+    font-size:1.5em;
+    width:75%;
+    height:50%;
+    position: center center;
+    margin: 6% auto;
+    opacity:1;
+    font-family: 'Josefin Sans', sans-serif;   
+    color:#2f3c7e;
+}
+.one h2 {
+    text-align:center;
+    font-family: 'Lobster', cursive;
+    margin-top:20px;
+    color:#2f3c7e;
+    font-size:2em;
+    opacity:1;
+    
+}
+.two{
+    border: solid 5px black;
+    margin:20px auto;
+    background-color: #2f3c7e;
+    background-image: url("raspi2.png");
+    background-size: 12.5%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.two h2 {
+    color:#fbeaeb;
+    text-align: center;
+    margin-top:20px;
+    font-size:2em;
+    font-family: 'Lobster', cursive;
+    text-shadow: 10px 10px 5px black;
+}
+
+.two ul {
+font-family: 'Josefin Sans', sans-serif;
+margin: 40px auto;
+width:75%;
+height:50%;
+}
+
+.two li  {
+    width:25%;
+    margin:20px auto 10px auto;
+    font-size:1.5em;
+}
+.linkbutton {
+    display: inline;
+    color:#2f3c7e;
+    margin: 0 10px;
+}
+
+.linkbutton a {
+    text-decoration: none;
+}
+.linkbutton a:hover {
+    background-color:#EF5455;
+}
+.linkbutton a:link {
+    color:#2f3c7e;
+}
+.linkbutton a:visited {
+    color:#2f3c7e;
+}
+/*javascript dropdown menu */
+#nav {
+    display: none;
+    width:100%;
+    height: 70px;
+    background-color: rgba(251, 234, 235, 0.80);
+    font-family: 'Lobster', cursive;
+    position: fixed;
+    overflow: auto;
+}
+
+#nav.active {
+    display: block;
+}
+
+#dropbar {
+    margin:15px auto;
+    text-align: center;
+    width: 25%;
+    font-size: 30px;
+}
+
+#menu {
+    width:40px;
+    height:40px;
+    margin-left:93%;
+    position: fixed;
+    margin-top:0;
+    cursor:pointer;
+}
+
+#menu.change {
+    background-image: url('/Users/alexzamora/Documents/website/website.html');  
+}
+
+/*pictures page specific css */
+#picpage {
+    background-color:#2f3c7e;
+}
+#picintro {
+    background-image: none;
+    background-color:rgba(251, 234, 235, 0.70);    ;
+    float: left;
+    margin:8% auto; 
+    border:none;
+    box-shadow: 20px 20px 20px black;  
+}
+#picpic {
+    background-image: none;
+    background-color: inherit;
+    float: left;
+    margin:8% auto; 
+    background-image: url('https://lh3.googleusercontent.com/w-470cLitl5ebFn12JblnrRSEeN0KPKEfll2R5BZ7L2520QSqGNYdkrK7iDbQArpozvGAl84Zd1xMLkExqmdIu_4XeWquzbHXh-5wn-eX34AxzLNNJvlow6PPWBVPbYz-ENDAs4bM9IpZR3Tv2FqUjLc_fkR2gM4KNOKAGDh917FfjBnSjD-BXMHFRmOZEKKia4e2M9UvqNHYjxNWkjqKNBXFtDaQZwnkVoYfo6pWodjFxESoCn3TGMOpfP6BzRm3jC6ea2ls273tULmFVE4WP5s1gy7af1lFbJ5c4oUbFvPOqP9E5doN6xZ2z2dyWgaM4ZuWwLUxoZUgljv9Avr8ZGnbrYtCXF4cSM_lO6l86Lf2FU5XZdQ4ED-pWrhjAwDcH0ZpDmTFY6F0SPnK8Rc4jheOU5Uy8E6MTSR9odfO7uPTPy9TLpwjdmtP4Lh4nuWUC7Ed5qXFe54a2qWoh6C3N-vI8EXwEMO9Yxc4BPIiC4PN1IhCcj5y7u8MaWTN4C7uVQLx3zsutlCpw0GonlfhN0kHQjS4nr55Z8mi_9pUClgzkSEURukVcS_Yb7qAdeZYacM03OUWtIpXOtUso_AlxLAkLDUgQS_PD4nGY5pai7YnKvOsneGq8fL25RgF_k-rBL6igO66rhqY_7kApe9D2GuT9qHx8g=w800-h600-no');
+    background-size:cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+.header {
+width: 100%;    
+height:500px;
+display:inline-flex;
+background-color:#2f3c7e;
+}
+.template {
+    width: 100%;    
+    height:500px;
+    display:inline-flex;
+    background-color:#2f3c7e;
+    border: black dotted 5px;
+}
+
+@media only screen and (max-width: 768px) {
+        div{
+            width: 250px;
+            height: 175px;
+        }
+        .one p {
+            font-size: .75em;
+        }
+        .one h2 {
+            font-size: 1.25em;
+            margin-top: 5px;
+        }
+        .two ul {
+            width:37.52;
+            height:25%;
+            position: relative;
+            bottom:25px;
+        }
+
+        .two li {
+            font-size: .70em;
+            margin: 10px auto 0px auto;
+        }
+        .two h2 {
+            margin-top: 5px;
+            font-size:1.25em;
+            text-shadow: none;
+        }
+        #nav {
+            height: 50px;
+        }
+        #dropbar {
+            width:35%;
+            border: #2f3c7e 5px dotted;
+        }
+        
+        .linkbutton {
+           font-size: 15px;
+            margin: 0 auto;
+        }
+
+        #menu {
+            width:30px;
+            height:30px;
+            margin-left:92%;
+        }
+    }
+    @media only screen and (max-width: 430px) {
+        div{
+            width: 200px;
+            height: 125px;
+        }
+        .one p {
+            font-size: .75em;
+        }
+        .one h2 {
+            font-size: 1.25em;
+            margin-top: 5px;
+        }
+        .two ul {
+            width:37.52;
+            height:25%;
+            position: relative;
+            bottom:25px;
+        }
+
+        .two li {
+            font-size: .70em;
+            margin: 10px auto 0px auto;
+        }
+        .two h2 {
+            margin-top: 5px;
+            font-size:1.25em;
+            text-shadow: none;
+        }
+        #nav {
+            height: 50px;
+        }
+        
+        .linkbutton {
+           font-size: 15px;
+            margin: 0 auto;
+            position: relative;
+            bottom: 50px;
+        }
+
+        #menu {
+            width:30px;
+            height:30px;
+            margin-left:92%;
+        }
+    }
+   
